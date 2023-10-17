@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Météo en direct</h1>
+    </header>
+    <main>
+      <section class="weather-info">
+        <article>
+          <h2 class="city-name">Ville</h2>
+          <p class="temperature">
+            Température : <span class="temp-value">--</span>°C
+          </p>
+          <div class="flex-row">
+            <img id="weather-icon" src="" alt="Weather Icon" />
+            <p class="description">
+              Conditions : <span class="weather-description">--</span>
+            </p>
+          </div>
+          <p class="humidity">
+            Humidité : <span class="humidity-value">--</span>%
+          </p>
+          <p class="wind">
+            Vitesse du Vent : <span class="wind-value">--</span>km/h
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
