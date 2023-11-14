@@ -2,8 +2,15 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Application météo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Application Météo</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/7c85ecb699.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -12,22 +19,31 @@
     <main>
       <section class="weather-info">
         <article>
-          <h2 class="city-name">Ville</h2>
-          <p class="temperature">
-            Température : <span class="temp-value">--</span>°C
-          </p>
-          <div class="flex-row">
-            <img id="weather-icon" src="" alt="Weather Icon" />
-            <p class="description">
-              Conditions : <span class="weather-description">--</span>
-            </p>
+          <p class="temperature"></p>
+          <div class="description">
+            <img id="weather-icon" alt="Icône météo" />
+            <p class="weather-description"></p>
           </div>
-          <p class="humidity">
-            Humidité : <span class="humidity-value">--</span>%
-          </p>
-          <p class="wind">
-            Vitesse du Vent : <span class="wind-value">--</span>km/h
-          </p>
+          <div class="city">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="city-name"></p>
+          </div>
+          <div class="grid">
+            <div class="humidity">
+              <i class="fas fa-tint"></i>
+              <div class="column">
+                <p class="humidity-value"></p>
+                <p>Humidité</p>
+              </div>
+            </div>
+            <div class="wind">
+              <i class="fas fa-wind"></i>
+              <div class="column">
+                <p class="wind-value"></p>
+                <p>Vent</p>
+              </div>
+            </div>
+          </div>
         </article>
       </section>
     </main>
